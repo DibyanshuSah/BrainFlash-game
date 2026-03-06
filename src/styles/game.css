@@ -1,5 +1,7 @@
 *{
 box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 /* PAGE */
@@ -10,13 +12,14 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:flex-start;
-padding-top:60px;
+padding:60px 15px 40px 15px;
+width:100%;
 }
 
 /* TITLE */
 
 .game-title{
-font-size:42px;
+font-size:40px;
 margin-bottom:10px;
 text-align:center;
 }
@@ -24,24 +27,25 @@ text-align:center;
 /* BEST SCORE */
 
 .best-score{
-font-size:22px;
+font-size:20px;
 margin-bottom:20px;
 color:#9ca3af;
+text-align:center;
 }
 
 .best-score span{
 color:#ff4d4f;
 font-weight:bold;
-font-size:26px;
+font-size:24px;
 }
 
 /* CARD */
 
 .game-card{
 background:rgba(255,255,255,0.05);
-padding:25px 30px;
+padding:25px 25px;
 border-radius:18px;
-width:90%;
+width:100%;
 max-width:320px;
 border:2px solid #3b82f6;
 
@@ -69,6 +73,7 @@ flex-direction:column;
 align-items:center;
 gap:15px;
 margin-top:20px;
+width:100%;
 }
 
 /* INPUT */
@@ -76,7 +81,7 @@ margin-top:20px;
 .input-area input{
 height:48px;
 width:200px;
-max-width:90%;
+max-width:100%;
 padding:0 16px;
 border-radius:10px;
 border:2px solid #3b82f6;
@@ -131,8 +136,9 @@ display:grid;
 gap:10px;
 justify-content:center;
 margin:20px auto;
-grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(60px,1fr));
 max-width:320px;
+width:100%;
 }
 
 /* NUMBER BOX */

@@ -12,11 +12,10 @@ font-family:Inter, Arial;
 /* BODY */
 
 body{
-background: radial-gradient(circle at top,#0f172a,#020617);
+background:radial-gradient(circle at top,#0f172a,#020617);
 color:white;
 overflow-x:hidden;
 min-height:100vh;
-width:100%;
 }
 
 /* NAVBAR */
@@ -37,8 +36,6 @@ text-align:center;
 margin-bottom:8px;
 }
 
-/* divider */
-
 .logo::after{
 content:"";
 display:block;
@@ -54,7 +51,7 @@ opacity:0.6;
 .page{
 max-width:1200px;
 margin:auto;
-padding:15px 20px 30px 20px;
+padding:20px;
 width:100%;
 }
 
@@ -67,7 +64,7 @@ padding:0 10px;
 }
 
 .hero h1{
-font-size:44px;
+font-size:42px;
 margin-bottom:6px;
 line-height:1.2;
 }
@@ -94,7 +91,6 @@ justify-content:center;
 gap:30px;
 margin-top:35px;
 flex-wrap:wrap;
-width:100%;
 }
 
 /* GAME CARD */
@@ -157,7 +153,6 @@ font-size:34px;
 
 .hero p{
 font-size:14px;
-white-space:normal;
 padding:0 5px;
 }
 
@@ -166,7 +161,6 @@ flex-direction:column;
 align-items:center;
 gap:22px;
 margin-top:25px;
-width:100%;
 }
 
 .game-card{
@@ -184,5 +178,4 @@ justify-content:center;
 gap:25px;
 flex-wrap:wrap;
 margin-top:20px;
-width:100%;
 }
