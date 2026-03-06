@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, Arial;
+}
+
+body{
+background: radial-gradient(circle at top,#0f172a,#020617);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:18px 0 10px 0;
+}
+
+.logo{
+font-size:40px;
+font-weight:700;
+color:#3b82f6;
+text-align:center;
+margin-bottom:8px;
+}
+
+/* divider under BrainFlash */
+
+.logo::after{
+content:"";
+display:block;
+width:120px;
+height:2px;
+background:#3b82f6;
+margin:8px auto 0 auto;
+opacity:0.6;
+}
+
+/* PAGE */
+
+.page{
+max-width:1200px;
+margin:auto;
+padding-top:15px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+margin-top:10px;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:44px;
+margin-bottom:6px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#60a5fa,#6366f1);
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:15px;
+margin-top:4px;
+}
+
+/* GAME SECTION */
+
+.games{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+/* GAME CARD */
+
+.game-card{
+width:340px;
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:18px;
+transition:0.3s;
+
+/* BLUE GLOW */
+
+box-shadow:
+0 0 20px rgba(59,130,246,0.5),
+0 0 50px rgba(59,130,246,0.3);
+}
+
+.game-card:hover{
+transform:translateY(-6px);
+
+box-shadow:
+0 0 35px rgba(59,130,246,0.7),
+0 0 70px rgba(59,130,246,0.4);
+}
+
+.game-card h2{
+margin-bottom:12px;
+}
+
+.game-card p{
+color:#9ca3af;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.play-btn{
+background:linear-gradient(90deg,#6366f1,#3b82f6);
+border:none;
+padding:12px 26px;
+border-radius:10px;
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:0.2s;
+}
+
+.play-btn:hover{
+transform:scale(1.05);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:14px;
+white-space:normal;
+}
+
+.games{
+flex-direction:column;
+align-items:center;
+gap:25px;
+}
+
+.game-card{
+width:90%;
+padding:30px;
+}
+
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:20px;
+}
