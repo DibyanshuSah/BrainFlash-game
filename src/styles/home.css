@@ -1,3 +1,7 @@
+html{
+scroll-behavior:smooth;
+}
+
 *{
 margin:0;
 padding:0;
@@ -12,6 +16,7 @@ background: radial-gradient(circle at top,#0f172a,#020617);
 color:white;
 overflow-x:hidden;
 min-height:100vh;
+width:100%;
 }
 
 /* NAVBAR */
@@ -50,6 +55,7 @@ opacity:0.6;
 max-width:1200px;
 margin:auto;
 padding:15px 20px 30px 20px;
+width:100%;
 }
 
 /* HERO */
@@ -88,6 +94,7 @@ justify-content:center;
 gap:30px;
 margin-top:35px;
 flex-wrap:wrap;
+width:100%;
 }
 
 /* GAME CARD */
@@ -145,12 +152,13 @@ transform:scale(1.05);
 @media (max-width:768px){
 
 .hero h1{
-font-size:36px;
+font-size:34px;
 }
 
 .hero p{
 font-size:14px;
 white-space:normal;
+padding:0 5px;
 }
 
 .games{
@@ -158,11 +166,12 @@ flex-direction:column;
 align-items:center;
 gap:22px;
 margin-top:25px;
+width:100%;
 }
 
 .game-card{
-width:95%;
-padding:28px;
+width:92%;
+padding:25px;
 }
 
 }
@@ -175,4 +184,5 @@ justify-content:center;
 gap:25px;
 flex-wrap:wrap;
 margin-top:20px;
+width:100%;
 }
