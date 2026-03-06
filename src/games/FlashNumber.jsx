@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/game.css";
 
-function FlashNumber() {
+function FlashNumber(){
 
 const navigate = useNavigate();
 
@@ -55,7 +55,6 @@ if(countdown === 0){
 
 setCountdown(null);
 setShowNumber(true);
-
 return;
 
 }
@@ -123,6 +122,7 @@ function tryAgain(){
 setLevel(1);
 setGameOver(false);
 setStarted(false);
+setCountdown(null);
 
 }
 
@@ -152,15 +152,17 @@ Start Game
 
 )}
 
+
 {/* COUNTDOWN */}
 
 {countdown !== null && (
 
-<h2 style={{fontSize:"48px"}}>
+<div className="countdown">
 {countdown}
-</h2>
+</div>
 
 )}
+
 
 {/* GAME */}
 
@@ -206,11 +208,12 @@ Submit
 
 )}
 
+
 {/* GAME OVER */}
 
 {gameOver && (
 
-<div>
+<div className="game-over">
 
 <h2>❌ Wrong!</h2>
 
